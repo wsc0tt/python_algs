@@ -1,6 +1,6 @@
-tail recursive stutter_list algorithm
-first solution:
-
+#tail recursive stutter_list algorithm
+#first solution:
+'''
 def stutter_list(lst):
     _stutter_list(lst, 0)
     
@@ -10,8 +10,8 @@ def _stutter_list(lst, index):
     else:
         lst.insert(index, lst[index])
         _stutter_list(lst, index + 2)
-
-second solution:
+'''
+#second solution:
 
 def stutter_list(lst):
     _sl(lst, 2*len(lst))
